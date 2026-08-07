@@ -54,7 +54,7 @@
             <div class="right">
                 <div class="box__account">
                     <div class="image">
-                        <img src="./images/02.jpg" alt="" width="400" height="400">
+                        <img src="./images/02.jpg" alt="">
                     </div>
                     <div class="name">
                         <i class="fa-solid fa-heart"></i>
@@ -231,6 +231,7 @@
         clearInterval(intervalContent)
         document.querySelector(".title__letter").textContent = "";
         text__letter.textContent = "";
+        document.querySelector(".signature").textContent = "";
         currentIndexLetter = 0
         currentIndexTitle = 0
         document.querySelector("#heart__letter").classList.remove("animationOp");
@@ -267,10 +268,10 @@
     const fcMobile = mobile()
     if(window.innerWidth < 768){
         setTimeout(()=>{
-            fcMobile.timeout("26", document.querySelector(".day"))
+            fcMobile.timeout("15", document.querySelector(".day"))
         },5000)
         setTimeout(()=>{
-            fcMobile.timeout("10", document.querySelector(".month"))
+            fcMobile.timeout("08", document.querySelector(".month"))
         },6000)
     }
     
